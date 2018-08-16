@@ -1,2 +1,2 @@
 # SEMPrE
-Repositório oficial do projeto: Simulador experiencial de mapeamento das proeficiências empreendedoras
+Repositório oficial do projeto: Simulador experiencial para mapeamento das proeficiências empreendedoras
