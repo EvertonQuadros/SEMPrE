@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.0" orientation="orthogonal" renderorder="right-down" width="50" height="40" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="173">
+ <tileset firstgid="1" name="Pipes-RustyWalls" tilewidth="16" tileheight="16" tilecount="352" columns="16">
+  <image source="Pipes-RustyWalls.png" width="256" height="352"/>
+ </tileset>
+ <tileset firstgid="353" name="Sidewalk_dark" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="Sidewalk_dark.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="417" name="Objects" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="Objects.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="673" name="Street" tilewidth="16" tileheight="16" tilecount="1900" columns="50">
+  <image source="Street.png" width="800" height="608"/>
+ </tileset>
+ <tileset firstgid="2573" name="StreetCurve" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="StreetCurve.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3597" name="road_markings_white" tilewidth="16" tileheight="16" tilecount="900" columns="30">
+  <image source="road_markings_white.png" width="480" height="480"/>
+ </tileset>
+ <layer id="1" name="Tile Layer Map Ground Texture" width="50" height="40">
+  <data encoding="csv">
+1627,1627,1875,1876,1877,1878,1627,1627,1627,1627,1627,1627,1627,1627,1873,1677,1677,1677,1873,1677,2348,2346,2346,2346,2346,2398,873,776,1076,1283,1283,729,730,776,776,1283,776,728,2393,1929,1930,2449,2449,2393,1877,1878,1677,1677,1677,1677,
+1627,1627,1925,1926,1927,1928,1627,1627,1627,1627,1627,1627,1627,1627,1923,1677,1677,1677,1923,1677,2348,2346,2346,2346,2346,2398,873,776,1126,776,776,777,777,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1927,1928,1677,1677,1677,1677,
+2446,1627,1627,1627,1627,1875,1876,1877,1878,1627,1875,1876,1877,1878,1973,1875,1876,1877,1878,1677,2348,2346,2346,2346,2346,2398,873,776,776,776,1076,1283,1283,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1876,1877,1878,1677,
+2446,2446,1627,1627,1627,1925,1926,1927,1928,1627,1925,1926,1927,1928,2023,1925,1926,1927,1928,1677,2348,2346,2346,2346,2346,2398,873,776,776,776,1126,679,680,1440,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1926,1927,1928,1677,
+1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,2073,1975,1976,1977,1978,1677,2348,1929,1929,1930,2349,2398,873,776,776,776,776,729,730,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1875,1876,1877,1878,1677,1875,1876,1877,1878,1677,1677,1677,1677,1677,2123,1677,1875,1876,1877,1878,2398,2346,2346,2346,2346,2398,873,776,776,776,776,777,777,1035,1035,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1925,1926,1927,1928,1677,1925,1926,1927,1928,1677,1677,1677,1677,1677,2173,1677,1925,1926,1927,1928,2448,2346,2346,2346,2346,2398,873,1077,1078,776,776,1283,1283,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1876,1877,1878,
+1975,1976,1977,1978,1677,1975,1976,1977,1978,1677,1677,1677,1677,1677,2223,1677,1975,1976,1977,1978,2498,2346,2346,2346,2346,2126,873,1127,1128,776,776,679,680,776,776,1283,776,728,2126,2346,2346,2346,2346,2393,1677,1677,1677,1926,1927,1928,
+2544,2545,2546,2547,2547,2545,2546,2547,2547,2547,2547,2547,2547,2547,2547,2547,2547,2547,2545,2546,2548,2346,2346,2346,2346,2398,873,1073,1074,1077,1078,729,730,1035,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+2395,2396,2030,2030,2395,2396,2030,2395,2395,2396,2030,2030,2395,2396,2030,2030,2395,2396,2030,2030,2395,2396,2499,2499,2499,2398,873,1123,1124,1127,1128,777,777,776,776,1283,1076,728,2393,2499,2500,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+2445,2446,2030,2030,2445,2446,2030,2445,2445,2446,2030,2030,2445,2446,2030,2030,2445,2446,2030,1930,2445,2446,2499,2500,2549,2398,873,776,1035,1073,1074,1283,1283,1077,1078,1283,1126,728,2393,2549,2550,2346,2346,2393,2545,2545,2545,2545,2545,2545,
+2349,1929,1930,2030,2030,2030,2030,2030,2346,2349,2350,2346,2346,2346,2301,2302,2346,2346,2299,2300,2030,2346,2549,2550,2346,2398,873,776,776,1123,1124,679,680,1127,1128,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+2030,2030,2030,2030,2030,2030,2030,2030,2030,2030,2030,2030,2030,2030,2351,2352,2030,2030,2349,2350,2030,2030,2030,2030,2030,2398,873,776,1035,776,1035,729,730,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+2546,2126,2546,2546,2546,2546,2546,2546,2546,2546,2546,2546,2546,2126,2546,2546,2546,2546,2546,2546,2546,2546,2546,2546,2546,2398,873,875,776,776,776,777,777,776,776,1283,1126,728,2393,2346,2346,2346,2346,2393,1874,1875,1876,1877,1878,1677,
+677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,677,1375,1376,875,875,1283,1283,1283,1283,1283,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1924,1925,1926,1927,1928,1677,
+1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,679,680,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,776,1273,729,730,1036,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1177,1076,1077,1078,1177,1177,1177,1177,1177,1177,1177,1077,1078,1177,1177,1283,1283,1283,1283,1283,1177,1177,1177,1177,1425,1426,776,776,776,776,1323,777,777,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,2545,2545,2545,2545,2545,2545,
+776,1126,1127,1128,1283,1283,1283,1283,1283,1283,1283,1283,1128,776,776,776,776,776,1283,1283,1283,1283,1283,776,776,776,776,776,776,776,776,1283,1283,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1926,1927,1928,
+998,1335,1283,997,998,1335,1283,997,998,1335,1283,997,998,1335,1283,997,998,1335,1283,997,998,1335,1283,1485,1485,1335,776,997,998,1335,1440,979,980,1177,1076,1283,776,728,2126,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1048,1335,1283,1047,1048,1335,1283,1047,1048,1335,1283,1047,1048,1335,1283,1047,1048,1335,1283,1047,1048,1335,1283,1485,1485,1335,776,1047,1048,1335,1440,1029,1030,1177,1126,1283,776,728,2393,2399,2400,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+776,1335,1283,1283,1534,1534,1534,1534,776,776,776,776,1273,776,776,776,776,1283,1283,776,776,1336,776,776,1485,776,776,776,776,776,776,1283,1283,776,776,1283,776,728,2393,2449,2450,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+776,1283,1283,1128,776,1534,1534,1534,1283,1283,1283,776,1323,776,776,1283,1283,776,776,776,776,776,776,776,776,1175,1176,776,776,776,776,1283,1283,776,776,1283,776,728,2343,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1283,1283,1283,1283,1283,1425,1426,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1283,1076,776,1387,1388,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1873,1874,1875,1876,1877,1878,
+776,776,1127,1128,776,776,776,776,1283,1283,1283,776,1323,776,776,776,776,776,776,776,776,776,776,776,776,1175,1176,776,1283,1126,776,1437,1438,776,776,1283,1076,728,2393,2346,2346,2346,2346,2393,1923,1924,1925,1926,1927,1928,
+924,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,925,1225,1283,1283,1283,1278,776,1333,1333,776,776,1283,1126,728,2393,2346,2346,2346,2346,2393,1973,1974,1975,1976,1977,1978,
+2295,2126,2295,2295,2295,2295,2295,2295,2295,2295,2295,2295,2295,2126,2295,2295,2295,2295,2295,2295,2295,2295,2295,2295,2295,2298,823,1283,1283,1333,776,1333,1333,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+2396,2396,2299,2300,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2396,2501,2502,2398,873,776,776,1035,776,1485,1485,1485,776,1283,776,728,2393,2346,2346,2346,2346,2393,1873,1874,1875,1876,1877,1878,
+2396,2396,2396,2396,2396,2499,2500,2396,2030,2030,2030,2030,2403,2404,2030,2030,2030,2299,2300,2030,2396,2396,2346,2346,2346,2398,873,776,1076,1333,1076,1485,1485,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1923,1924,1925,1926,1927,1928,
+2396,2030,2030,2446,2446,2446,2446,2030,2030,2030,2030,2030,2453,2454,2030,2030,2030,2030,2030,2396,2396,2030,2030,2346,2346,2398,873,776,1126,1283,1283,1283,1283,776,776,1283,776,728,2393,2499,2500,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2446,2346,2346,2346,2346,2398,873,776,776,1283,1283,1283,1283,776,776,1283,776,728,2393,2549,2550,2346,2346,2393,2545,2545,2545,2545,2545,2545,
+2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2294,2295,2296,2298,2346,2346,2499,2500,2398,873,776,776,1283,1283,1387,1388,776,776,1283,776,728,2393,2346,2346,2346,2346,2493,1677,1677,1677,1677,1677,1677,
+1677,1677,1873,1874,1875,1876,1877,1878,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,2348,2346,2346,2549,2550,2398,873,776,776,1283,1283,1437,1438,776,776,1283,776,728,2393,2346,2346,2346,2346,2393,1677,1677,1677,1677,1677,1677,
+1677,1677,1973,1974,1975,1976,1977,1978,1677,1677,1677,1923,1924,1925,1926,1927,1928,1677,1677,1677,2348,2346,2346,2346,2346,2126,873,776,776,1283,776,1283,1283,776,776,1283,1283,728,2126,2346,2346,2346,2346,2493,1874,1875,1876,1877,1878,1677,
+1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1677,1973,1974,1975,1976,1977,1978,1677,1677,1677,2348,1929,1929,2346,2346,2398,873,1077,1078,1283,1078,1283,1283,776,776,1283,1283,728,2343,2346,2346,2346,2346,2493,1924,1925,1926,1927,1928,1677,
+1873,1577,1577,1577,1577,1577,1577,1577,1577,1876,1877,1878,1577,1577,1873,1874,1875,1876,1877,1878,2398,2346,2346,2346,2499,2398,873,1127,1128,1283,1128,1387,1388,776,776,1283,1283,728,2393,2346,2346,2346,2346,2493,1873,1874,1875,1876,1877,1878,
+1923,1577,1577,1577,1577,1577,1577,1577,1577,1926,1927,1928,1577,1577,1923,1924,1925,1926,1927,1928,2448,2346,2346,2346,2346,2398,873,1073,1074,1283,1074,1437,1438,776,1076,1283,1283,728,2393,2346,2346,2346,2346,2493,1923,1924,1925,1926,1927,1928,
+1577,1873,1577,1577,1577,1577,1577,1577,1577,1577,1577,1577,1577,1577,1973,1873,1874,1875,1876,1877,2498,2346,2346,2346,2346,2398,873,1123,1124,1283,1124,1283,1283,776,1126,1283,1283,728,2393,2346,2299,2300,2300,2543,2545,2545,2545,2545,2545,2545,
+1577,1923,1577,1577,1577,1577,1577,1876,1877,1878,1577,1577,1577,1577,1677,1923,1924,1925,1926,1927,2448,2346,2346,2303,2304,2398,873,776,1035,1283,1035,1283,1283,776,776,1283,1283,728,2393,2346,2349,2350,2350,2346,2346,2346,2346,2346,2346,2346,
+1577,1577,1577,1577,1577,1577,1577,1926,1927,1928,1577,1577,1577,1577,1677,1973,1974,1975,1976,1977,2348,2346,2346,2353,2354,2398,873,776,776,1283,1283,1387,1388,776,776,1283,1283,728,2393,2346,2346,2346,2346,2346,2346,2346,2346,2346,2346,2346
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer Map Object Texture" width="50" height="40">
+  <data encoding="csv">
+1918,1919,1920,0,651,652,441,442,537,538,539,540,541,537,538,539,540,541,542,2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,549,550,551,552,
+1968,1969,1970,0,667,668,457,458,553,554,555,556,557,553,554,555,556,557,558,2066,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,441,442,565,566,567,568,
+2018,2019,2020,0,547,548,473,474,569,570,571,572,573,569,570,571,572,573,574,2016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,457,458,581,582,583,584,
+2068,2069,2070,0,563,564,0,0,0,0,0,0,0,0,0,0,0,0,0,2066,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,473,474,597,598,599,600,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4085,4086,4087,4088,4090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4115,4116,4117,4118,4120,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3853,3853,3853,3853,3853,3853,3853,3853,3853,3853,3853,3854,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3883,3883,3883,3883,3883,3883,3883,3883,3883,3883,3883,3884,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3913,3913,3913,3913,3913,3913,3913,3913,3913,3913,3913,3914,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3943,3943,3943,3943,3944,3944,3944,3944,3944,3944,3944,3944,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4003,4003,4004,4004,4004,4004,4004,4004,4004,4004,4004,4004,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2013,521,522,523,524,525,526,441,442,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2013,537,538,539,540,541,542,457,458,0,581,582,583,584,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2013,553,554,555,556,557,558,473,474,514,597,598,599,600,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+2013,569,570,571,572,573,574,0,513,514,549,550,551,552,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="Object Layer">
+  <object id="1" x="0" y="64" width="112" height="64">
+   <properties>
+    <property name="id" type="int" value="0"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="North"/>
+   </properties>
+  </object>
+  <object id="2" x="112" y="64" width="96" height="64">
+   <properties>
+    <property name="id" type="int" value="2"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="North"/>
+   </properties>
+  </object>
+  <object id="8" x="208" y="64" width="112" height="64">
+   <properties>
+    <property name="id" type="int" value="4"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="North"/>
+   </properties>
+  </object>
+  <object id="10" x="0" y="0" width="320" height="64">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+  <object id="14" x="704" y="64" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="7"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="East"/>
+   </properties>
+  </object>
+  <object id="15" x="704" y="176" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="8"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="East"/>
+   </properties>
+  </object>
+  <object id="16" x="704" y="288" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="9"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="East"/>
+   </properties>
+  </object>
+  <object id="17" x="704" y="384" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="10"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="East"/>
+   </properties>
+  </object>
+  <object id="18" x="704" y="496" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="11"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="East"/>
+   </properties>
+  </object>
+  <object id="20" x="0" y="512" width="112" height="64">
+   <properties>
+    <property name="id" type="int" value="1"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="South"/>
+   </properties>
+  </object>
+  <object id="21" x="112" y="512" width="112" height="64">
+   <properties>
+    <property name="id" type="int" value="3"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="South"/>
+   </properties>
+  </object>
+  <object id="22" x="224" y="512" width="96" height="64">
+   <properties>
+    <property name="id" type="int" value="5"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="South"/>
+   </properties>
+  </object>
+  <object id="23" x="224" y="576" width="96" height="64">
+   <properties>
+    <property name="id" type="int" value="6"/>
+    <property name="name" value="Spawn_Lot"/>
+    <property name="orientation" value="West"/>
+   </properties>
+  </object>
+  <object id="26" x="704" y="160" width="96" height="16">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+  <object id="28" x="704" y="272" width="96" height="16">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+  <object id="35" x="0" y="576" width="224" height="64">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+  <object id="97" x="72" y="430" width="15" height="8">
+   <properties>
+    <property name="name" value="Light_Pole"/>
+   </properties>
+  </object>
+  <object id="98" x="312" y="432" width="15" height="8">
+   <properties>
+    <property name="face" value="West"/>
+    <property name="name" value="Traffic_Light"/>
+   </properties>
+  </object>
+  <object id="99" x="296" y="205" width="15" height="8">
+   <properties>
+    <property name="name" value="Light_Pole"/>
+   </properties>
+  </object>
+  <object id="100" x="400" y="80" width="8" height="16">
+   <properties>
+    <property name="name" value="Light_Pole"/>
+   </properties>
+  </object>
+  <object id="101" x="616" y="206" width="8" height="16">
+   <properties>
+    <property name="name" value="Light_Pole"/>
+   </properties>
+  </object>
+  <object id="102" x="616" y="608" width="8" height="16">
+   <properties>
+    <property name="name" value="Light_Pole"/>
+   </properties>
+  </object>
+  <object id="103" x="400" y="544" width="8" height="16">
+   <properties>
+    <property name="name" value="Light_Pole"/>
+   </properties>
+  </object>
+  <object id="104" x="616" y="493" width="8" height="16">
+   <properties>
+    <property name="face" value="South"/>
+    <property name="name" value="Traffic_Light"/>
+   </properties>
+  </object>
+  <object id="111" x="704" y="592" width="96" height="48">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+  <object id="112" x="704" y="480" width="96" height="16">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+  <object id="158" x="704" y="0" width="96" height="64">
+   <properties>
+    <property name="name" value="Barrier"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Path Layer" visible="0">
+  <object id="49" x="336" y="0" width="80" height="224">
+   <properties>
+    <property name="name" value="Sidewalk"/>
+   </properties>
+  </object>
+  <object id="50" x="336" y="416" width="80" height="224">
+   <properties>
+    <property name="name" value="Sidewalk"/>
+   </properties>
+  </object>
+  <object id="51" x="336" y="224" width="80" height="176">
+   <properties>
+    <property name="name" value="Crossing"/>
+    <property name="orientation" value="West"/>
+   </properties>
+  </object>
+  <object id="52" x="416" y="416" width="192" height="80">
+   <properties>
+    <property name="name" value="Crossing"/>
+    <property name="orientation" value="South"/>
+   </properties>
+  </object>
+  <object id="53" x="416" y="0" width="192" height="416">
+   <properties>
+    <property name="name" value="Road"/>
+   </properties>
+  </object>
+  <object id="54" x="0" y="224" width="336" height="176">
+   <properties>
+    <property name="name" value="Road"/>
+   </properties>
+  </object>
+  <object id="55" x="608" y="0" width="80" height="640">
+   <properties>
+    <property name="name" value="Sidewalk"/>
+   </properties>
+  </object>
+  <object id="56" x="0" y="144" width="336" height="80">
+   <properties>
+    <property name="name" value="Sidewalk"/>
+   </properties>
+  </object>
+  <object id="57" x="0" y="416" width="336" height="80">
+   <properties>
+    <property name="name" value="Sidewalk"/>
+   </properties>
+  </object>
+  <object id="58" x="416" y="496" width="192" height="144">
+   <properties>
+    <property name="name" value="Road"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="Spawn Layer" visible="0">
+  <object id="62" x="288" y="224" width="48" height="192">
+   <properties>
+    <property name="name" value="Car_Waitpoint"/>
+    <property name="orientation" value="West"/>
+   </properties>
+  </object>
+  <object id="64" x="416" y="496" width="192" height="32">
+   <properties>
+    <property name="name" value="Car_Waitpoint"/>
+    <property name="orientation" value="South"/>
+   </properties>
+  </object>
+  <object id="65" x="-64" y="448" width="48" height="32">
+   <properties>
+    <property name="angle" type="float" value="0"/>
+    <property name="name" value="Spawn_Walker"/>
+   </properties>
+  </object>
+  <object id="66" x="-248" y="308" width="48" height="16">
+   <properties>
+    <property name="angle" type="float" value="360"/>
+    <property name="name" value="Spawn_Car"/>
+   </properties>
+  </object>
+  <object id="70" x="-64" y="160" width="48" height="32">
+   <properties>
+    <property name="angle" type="float" value="0"/>
+    <property name="name" value="Spawn_Walker"/>
+   </properties>
+  </object>
+  <object id="71" x="352" y="-64" width="32" height="48">
+   <properties>
+    <property name="angle" type="float" value="270"/>
+    <property name="name" value="Spawn_Walker"/>
+   </properties>
+  </object>
+  <object id="72" x="-512" y="-224" width="1504" height="48">
+   <properties>
+    <property name="name" value="Despawn_Car"/>
+   </properties>
+  </object>
+  <object id="73" x="640" y="-64" width="32" height="48">
+   <properties>
+    <property name="angle" type="float" value="270"/>
+    <property name="name" value="Spawn_Walker"/>
+   </properties>
+  </object>
+  <object id="74" x="336" y="432" width="64" height="64">
+   <properties>
+    <property name="name" value="Walker_Waitpoint"/>
+    <property name="waypoint" value="1"/>
+   </properties>
+  </object>
+  <object id="76" x="336" y="144" width="80" height="64">
+   <properties>
+    <property name="name" value="Walker_Waitpoint"/>
+    <property name="waypoint" value="2"/>
+   </properties>
+  </object>
+  <object id="78" x="624" y="416" width="64" height="80">
+   <properties>
+    <property name="name" value="Walker_Waitpoint"/>
+    <property name="waypoint" value="3"/>
+   </properties>
+  </object>
+  <object id="79" x="463" y="832" width="16" height="48">
+   <properties>
+    <property name="angle" type="float" value="90"/>
+    <property name="name" value="Spawn_Car"/>
+   </properties>
+  </object>
+  <object id="80" x="640" y="656" width="30.5" height="48">
+   <properties>
+    <property name="angle" type="float" value="90"/>
+    <property name="name" value="Spawn_Walker"/>
+   </properties>
+  </object>
+  <object id="81" x="352" y="656" width="32" height="49.5">
+   <properties>
+    <property name="angle" type="float" value="90"/>
+    <property name="name" value="Spawn_Walker"/>
+   </properties>
+  </object>
+  <object id="82" x="32" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Start"/>
+   </properties>
+  </object>
+  <object id="86" x="-160" y="752" width="1072" height="48">
+   <properties>
+    <property name="name" value="Despawn_Walker"/>
+   </properties>
+  </object>
+  <object id="87" x="-112" y="-160" width="976" height="48">
+   <properties>
+    <property name="name" value="Despawn_Walker"/>
+   </properties>
+  </object>
+  <object id="105" x="-249" y="398" width="48" height="16">
+   <properties>
+    <property name="angle" type="float" value="360"/>
+    <property name="name" value="Spawn_Car"/>
+   </properties>
+  </object>
+  <object id="106" x="370" y="832" width="16" height="48">
+   <properties>
+    <property name="angle" type="float" value="90"/>
+    <property name="name" value="Spawn_Car"/>
+   </properties>
+  </object>
+  <object id="107" x="-576" y="-224" width="64" height="1264">
+   <properties>
+    <property name="name" value="Despawn_Car"/>
+   </properties>
+  </object>
+  <object id="108" x="-576" y="1040" width="1568" height="48">
+   <properties>
+    <property name="name" value="Despawn_Car"/>
+   </properties>
+  </object>
+  <object id="109" x="944" y="-176" width="48" height="1216">
+   <properties>
+    <property name="name" value="Despawn_Car"/>
+   </properties>
+  </object>
+  <object id="114" x="864" y="-160" width="48" height="912">
+   <properties>
+    <property name="name" value="Despawn_Walker"/>
+   </properties>
+  </object>
+  <object id="115" x="-160" y="-160" width="48" height="912">
+   <properties>
+    <property name="name" value="Despawn_Walker"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Car Waypoints" visible="0">
+  <object id="118" x="-160" y="272" width="16" height="112">
+   <properties>
+    <property name="intersection" type="int" value="0"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="0"/>
+    <property name="rotation2" type="float" value="0"/>
+    <property name="rotation3" type="float" value="0"/>
+    <property name="route" type="int" value="-1"/>
+   </properties>
+  </object>
+  <object id="119" x="560" y="240" width="16" height="144">
+   <properties>
+    <property name="intersection" type="int" value="1"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="90"/>
+    <property name="rotation2" type="float" value="90"/>
+    <property name="rotation3" type="float" value="90"/>
+    <property name="route" type="int" value="-1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Walker Waypoints">
+  <object id="133" x="320" y="0" width="96" height="224">
+   <properties>
+    <property name="intersection" type="int" value="1"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="90"/>
+    <property name="rotation2" type="float" value="270"/>
+    <property name="rotation3" type="float" value="90"/>
+    <property name="route" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="134" x="0" y="128" width="416" height="96">
+   <properties>
+    <property name="intersection" type="int" value="2"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="0"/>
+    <property name="rotation2" type="float" value="180"/>
+    <property name="rotation3" type="float" value="180"/>
+    <property name="route" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="135" x="336" y="144" width="80" height="352">
+   <properties>
+    <property name="intersection" type="int" value="0"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="90"/>
+    <property name="rotation2" type="float" value="270"/>
+    <property name="rotation3" type="float" value="0"/>
+    <property name="route" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="136" x="0" y="416" width="416" height="96">
+   <properties>
+    <property name="intersection" type="int" value="2"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="0"/>
+    <property name="rotation2" type="float" value="180"/>
+    <property name="rotation3" type="float" value="180"/>
+    <property name="route" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="137" x="320" y="416" width="96" height="224">
+   <properties>
+    <property name="intersection" type="int" value="1"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="90"/>
+    <property name="rotation2" type="float" value="270"/>
+    <property name="rotation3" type="float" value="270"/>
+    <property name="route" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="138" x="608" y="0" width="96" height="320">
+   <properties>
+    <property name="intersection" type="int" value="1"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="90"/>
+    <property name="rotation2" type="float" value="270"/>
+    <property name="rotation3" type="float" value="90"/>
+    <property name="route" type="int" value="4"/>
+   </properties>
+  </object>
+  <object id="139" x="336.5" y="420.5" width="352" height="75">
+   <properties>
+    <property name="intersection" type="int" value="0"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="180"/>
+    <property name="rotation2" type="float" value="0"/>
+    <property name="rotation3" type="float" value="0"/>
+    <property name="route" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="147" x="608" y="320" width="96" height="320">
+   <properties>
+    <property name="intersection" type="int" value="2"/>
+    <property name="name" value="Waypoint"/>
+    <property name="rotation" type="float" value="90"/>
+    <property name="rotation2" type="float" value="270"/>
+    <property name="rotation3" type="float" value="270"/>
+    <property name="route" type="int" value="4"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="Lot Waypoints" visible="0">
+  <object id="159" x="0" y="416" width="112" height="96">
+   <properties>
+    <property name="id" type="int" value="1"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="160" x="112" y="416" width="112" height="96">
+   <properties>
+    <property name="id" type="int" value="3"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="161" x="224" y="416" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="5"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="162" x="320" y="576" width="96" height="64">
+   <properties>
+    <property name="id" type="int" value="6"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="163" x="608" y="496" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="11"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="164" x="608" y="384" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="10"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="165" x="608" y="288" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="9"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="166" x="608" y="176" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="8"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="167" x="608" y="64" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="7"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="168" x="208" y="128" width="112" height="96">
+   <properties>
+    <property name="id" type="int" value="4"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="169" x="112" y="128" width="96" height="96">
+   <properties>
+    <property name="id" type="int" value="2"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+  <object id="170" x="0" y="128" width="112" height="96">
+   <properties>
+    <property name="id" type="int" value="0"/>
+    <property name="name" value="Lot_Waypoint"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
